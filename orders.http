@@ -1,0 +1,48 @@
+### GET all orders
+GET http://localhost:8080/order
+
+### POST Order for a t-shirt
+POST http://localhost:8080/order
+Content-Type: application/json
+
+{
+  "type": "t-shirt",
+  "quantity": 1
+}
+
+### POST Order for 2 shoes
+POST http://localhost:8080/order
+Content-Type: application/json
+
+{
+  "type": "t-shirt",
+  "quantity": 2
+}
+
+### POST Order for 3 shoes (1 anomaly created)
+POST http://localhost:8080/order
+Content-Type: application/json
+
+{
+  "type": "shoe",
+  "quantity": 3
+}
+
+### POST Order for 21 shoes (2 anomaly created)
+POST http://localhost:8080/order
+Content-Type: application/json
+
+{
+  "type": "shoe",
+  "quantity": 21
+}
+
+### POST Order for 100 shirts (1 anomaly created)
+POST http://localhost:8080/order
+Content-Type: application/json
+
+{
+  "type": "shirt",
+  "quantity": 100
+}
+
