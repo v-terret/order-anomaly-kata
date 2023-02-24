@@ -8,19 +8,7 @@ La personne faisant l'exercice s'occupe du backend applicatif (springboot).
 
 On considère que les données et les actions doivent pouvoir être accessibles ou lancées depuis un front-end indépendant via des endpoints REST.
 
-```plantuml
-@startuml title="Modèle"
-object T_ORDER 
-T_ORDER : |clothingType | varchar|
-T_ORDER : |itemNumber   | number|
-object T_ANOMALY
-T_ANOMALY : |order_id    | number |
-T_ANOMALY : |anomalyType | varchar|
-T_ANOMALY : |status      | varchar|
-
-T_ORDER "1" -- "*" T_ANOMALY
-@enduml
-```
+![image](https://user-images.githubusercontent.com/16758842/221166354-01341d4c-9313-47fb-9aa1-68cc70d45796.png)
 
 ## Features demandées
 
